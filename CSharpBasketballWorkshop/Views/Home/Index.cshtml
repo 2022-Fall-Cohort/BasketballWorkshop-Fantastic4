@@ -2,25 +2,52 @@
     ViewData["Title"] = "Home Page";
 }
 
+
 <div class="text-center">
-    <h1><span class="display-4" style="border:4px solid blue; color:white; font-style: bold; background: blue; border-radius: 15px; font-style:Georgia;">Basketball Workshop </span> </h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>
+    <span 
+        class="display-4"
+        style="border:4px solid blue;
+        background: lightblue;
+        border-radius: 15px;">Basketball Workshop 
+    </span>
+         <img src="~/lib/images/basketball.png" alt="Basketball going in hoop" class="center" width="150" height="150">
+    </h1>
+    <br />
 </div>
+
+
 
 @*<a href="../Players">Players Modification</a>
 *@
+<body>
+    <br />
+    <br />
+    <br />
+    <a class="nav-link text-dark" @*asp-area="" asp-controller="Teams" asp-action="Index"*@
+        style="border:5px solid blue;
+        background: lightblue;
+        width:fit-content;
+        border-radius: 10px;"
+        >1) To see a list of Teams <button onclick="location.href='@Url.Action("Index", "Teams")'"> Click Here</button></a>
+  
 
 
-<a class="nav-link text-dark" asp-area="" asp-controller="Teams" asp-action="Index" 
-style="border:5px solid blue; 
-width:fit-content; 
-border-radius: 10px;"
->Teams</a>
-<br />
-<a class="nav-link text-dark" asp-area="" asp-controller="Players" asp-action="Index" 
-style="border:5px solid blue;
-width:fit-content; 
-border-radius: 10px;"
->Players</a>
-<br />
-<br />
+    <br />
+    <a class="nav-link text-dark"@* asp-area="" asp-controller="Players" asp-action="Index"*@
+        style="border:5px solid blue;
+        background: lightblue;
+        width:fit-content;
+        border-radius: 10px;"
+        >2) To see a list of Players <button onclick="location.href='@Url.Action("Index", "Players")'"> Click Here</button></a>
+
+    <br />
+    <br />
+    <br />
+</body>
+
+
+<div class="text-center">
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+</div>

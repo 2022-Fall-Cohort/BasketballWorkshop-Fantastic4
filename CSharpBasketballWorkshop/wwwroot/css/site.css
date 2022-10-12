@@ -16,3 +16,20 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.SamsStyle {
+    font-size: 3em;
+    color: blue;
+}
+
+
+#logo-container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+    #logo-container > img {
+        max-width: 50%;
+        border: 2px solid blue;
+    }*/
